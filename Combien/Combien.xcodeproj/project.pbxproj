@@ -17,6 +17,7 @@
 		391D9F46292A8F6400E13B37 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391D9F45292A8F6400E13B37 /* Questions.swift */; };
 		391D9F49292A8F9A00E13B37 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391D9F48292A8F9A00E13B37 /* Test.swift */; };
 		3952307F292E5AA3005A1F6B /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952307E292E5AA3005A1F6B /* FinishViewController.swift */; };
+		39D5E829292EBB4700FECA50 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 39D5E828292EBB4700FECA50 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		391D9F45292A8F6400E13B37 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		391D9F48292A8F9A00E13B37 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		3952307E292E5AA3005A1F6B /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		39D5E828292EBB4700FECA50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		391D9F1F292A8BDA00E13B37 = {
 			isa = PBXGroup;
 			children = (
+				39D5E828292EBB4700FECA50 /* README.md */,
 				391D9F2A292A8BDA00E13B37 /* Combien */,
 				391D9F29292A8BDA00E13B37 /* Products */,
 			);
@@ -163,6 +166,7 @@
 			files = (
 				391D9F38292A8BDA00E13B37 /* LaunchScreen.storyboard in Resources */,
 				391D9F35292A8BDA00E13B37 /* Assets.xcassets in Resources */,
+				39D5E829292EBB4700FECA50 /* README.md in Resources */,
 				391D9F33292A8BDA00E13B37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
