@@ -39,7 +39,7 @@ struct Test {
     }
     
     func getNombreQuestion() -> Int {
-        return testQuestion.count
+        return testQuestion.count - 1
     }
     
     func getNumeroQuestionCourante() -> Int {
@@ -66,8 +66,4 @@ struct Test {
     func getScore() -> Int {
         return score
     }
-    
 }
-/**
-
- */

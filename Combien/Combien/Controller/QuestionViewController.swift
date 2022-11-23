@@ -20,6 +20,7 @@ class QuestionViewController : UIViewController {
     
     
     var test = Test()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,7 @@ class QuestionViewController : UIViewController {
         let questionsNombre = test.getNombreQuestion()
         let numeroQuestion = test.getNumeroQuestionCourante()
         
-        if numeroQuestion <= questionsNombre {
+        if numeroQuestion < questionsNombre {
             labelNumeroQuestion.text = "Question \(numeroQuestion) / \(questionsNombre)"
             labelQuestion.text = test.getQuestion()
             
@@ -60,10 +61,14 @@ class QuestionViewController : UIViewController {
             choix3.backgroundColor = UIColor.white
             choix4.backgroundColor = UIColor.white
         } else {
-            
+            let score = test.getScore()
+            let nombreQuestion = test.getNombreQuestion()
+            let finish = self.storyboard?.instantiateViewController(withIdentifier: "FinishViewController") as! FinishViewController
+              
+            finish.modalPresentationStyle = .fullScreen
+                
+            self.present(finish, animated: true, completion: {finish.setLabel(String(score), String(nombreQuestion))})
         }
-        
-
     }
     
     
