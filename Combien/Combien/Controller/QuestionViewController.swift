@@ -44,21 +44,26 @@ class QuestionViewController : UIViewController {
         let questionsNombre = test.getNombreQuestion()
         let numeroQuestion = test.getNumeroQuestionCourante()
         
-        labelNumeroQuestion.text = "Question \(numeroQuestion) / \(questionsNombre)"
-        labelQuestion.text = test.getQuestion()
+        if numeroQuestion <= questionsNombre {
+            labelNumeroQuestion.text = "Question \(numeroQuestion) / \(questionsNombre)"
+            labelQuestion.text = test.getQuestion()
+            
+            let choixPossibles = test.getReponses()
+            
+            choix1.setTitle(choixPossibles[0], for: .normal)
+            choix2.setTitle(choixPossibles[1], for: .normal)
+            choix3.setTitle(choixPossibles[2], for: .normal)
+            choix4.setTitle(choixPossibles[3], for: .normal)
+            
+            choix1.backgroundColor = UIColor.white
+            choix2.backgroundColor = UIColor.white
+            choix3.backgroundColor = UIColor.white
+            choix4.backgroundColor = UIColor.white
+        } else {
+            
+        }
         
-        let choixPossibles = test.getReponses()
-        
-        choix1.setTitle(choixPossibles[0], for: .normal)
-        choix2.setTitle(choixPossibles[1], for: .normal)
-        choix3.setTitle(choixPossibles[2], for: .normal)
-        choix4.setTitle(choixPossibles[3], for: .normal)
-        
-        choix1.backgroundColor = UIColor.white
-        choix2.backgroundColor = UIColor.white
-        choix3.backgroundColor = UIColor.white
-        choix4.backgroundColor = UIColor.white
-        
+
     }
     
     
